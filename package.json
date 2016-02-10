@@ -1,0 +1,15 @@
+{
+  "name": "yukibot-discord",
+  "description": "The YukiBot bot of the Discord variety",
+  "version": "0.0.1",
+  "homepage": "https://github.com/juju2143/YukiBot-Discord",
+  "bugs": "https://github.com/juju2143/YukiBot-Discord/issues",
+  "license": "GPL-3.0+",
+  "repository": "juju2143/YukiBot-Discord",
+  "main": "main.js",
+  "scripts" : { "start" : "node main.js" },
+  "dependencies": {
+    "discord.js": "^6.0.0"
+  },
+  "author": "Julien Savard <juju2143@gmail.com> (http://juju2143.ca)"
+}
