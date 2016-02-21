@@ -1,4 +1,5 @@
 var Discord = require("discord.js");
+var fs = require("fs");
 var config = require("./config.json");
 var bot = new Discord.Client();
 var cmds = [];
@@ -22,14 +23,25 @@ bot.on("message", (message) => {
         });
     }
 });
-cmds = [];
+
 config.cmds.forEach((item) => {
     cmds.push(require("./"+item));
+    fs.watch(item, (event, filename) => {
+        console.log("Reloaded "+item+".");
+        delete require.cache[require.resolve("./"+item)];
+        var newcmd = require("./"+item);
+        cmds.filter((i)=>{return i.name == newcmd.name}).forEach((t)=>{
+            cmds.splice(cmds.indexOf(t), 1);
+        });
+        cmds.push(newcmd);
+    });
     console.log("Loaded "+item+".");
 });
-console.log("Started Discord bot.");
+
 bot.login(config.email, config.password).then((token) => {
     console.log("Signed in. token="+token);
 }).catch((err) => {
     console.log("Error signing in. "+err);
 });
+
+console.log("Started Discord bot.");
