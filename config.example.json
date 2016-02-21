@@ -1,5 +1,7 @@
 {
   "email": "yourdiscordemail@example.com",
   "password": "yourdiscordpassword",
-  "cmdchar": "!"
+  "cmdchar": "!",
+  "cmds": ["cmds/test.js", "cmds/help.js", "cmds/derpibooru.js"],
+  "playing": "with your butt"
 }
