@@ -15,6 +15,8 @@ It's this easy. The bot will now listen to any message on every server and PM it
 
 There's a few commands in the `cmds/` directory you can load in `config.json`, a good template to write your own would be `cmds/test.js`.
 
+For help about the configuration options and writing commands, please check [the wiki](https://github.com/juju2143/YukiBot-Discord/wiki).
+
 Type `!help` in the chat to see what commands are available and have fun ^_^
 
 ## Support

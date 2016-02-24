@@ -2,6 +2,11 @@
   "email": "yourdiscordemail@example.com",
   "password": "yourdiscordpassword",
   "cmdchar": "!",
-  "cmds": ["cmds/test.js", "cmds/help.js", "cmds/derpibooru.js"],
-  "playing": "with your butt"
+  "cmds": ["cmds/test.js",
+           "cmds/help.js",
+           "cmds/derpibooru.js",
+           "cmds/playing.js",
+           "cmds/seen.js"],
+  "playing": "with your butt",
+  "seenLastMsgs": 1000
 }

@@ -5,9 +5,12 @@ var bot = new Discord.Client();
 var cmds = [];
 
 bot.on("ready", () => {
-    bot.setStatus("online", config.playing).then(() => {
-        console.log("Status has been set.");
-    });
+    if(config.playing)
+    {
+        bot.setStatus("online", config.playing).then(() => {
+            console.log("Status has been set.");
+        });
+    }
 });
 
 bot.on("message", (message) => {
