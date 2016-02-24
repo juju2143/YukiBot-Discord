@@ -19,7 +19,7 @@ module.exports = {
             });
             bot.reply(message, "voici une liste non-exhaustive des commandes disponibles:\n"+
                                list+
-                               "Utilise \""+config.cmdchar+this.name+" commande\" pour de l'aide sur une commande particulière.\n"+
+                               "Utilise \""+config.cmdchar+module.exports.name+" commande\" pour de l'aide sur une commande particulière.\n"+
                                process.env.npm_package_name+" v"+process.env.npm_package_version+" créé par "+process.env.npm_package_author_name+"\n"+
                                "Powered by "+process.env.npm_config_user_agent);
         }
