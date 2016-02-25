@@ -6,7 +6,9 @@
            "cmds/help.js",
            "cmds/derpibooru.js",
            "cmds/playing.js",
-           "cmds/seen.js"],
+           "cmds/seen.js",
+           "cmds/color.js"],
   "playing": "with your butt",
-  "seenLastMsgs": 1000
+  "seenLastMsgs": 1000,
+  "colorSize": [200, 200]
 }
