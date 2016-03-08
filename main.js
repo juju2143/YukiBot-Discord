@@ -13,6 +13,15 @@ bot.on("ready", () => {
     }
 });
 
+bot.on("disconnected", () => {
+    console.log("We've been disconncted! Let's try again!");
+    bot.login(config.email, config.password).then((token) => {
+        console.log("Signed in. token="+token);
+    }).catch((err) => {
+        console.log("Error signing in. "+err);
+    });
+});
+
 bot.on("message", (message) => {
     if(message.content.startsWith(config.cmdchar))
     {
