@@ -11,6 +11,7 @@
     "start": "node main.js"
   },
   "dependencies": {
+    "combined-stream2": "^1.1.1",
     "discord.js": "^6.0.0",
     "node-gd": "^1.1.0",
     "rgbcolor": "0.0.4"
